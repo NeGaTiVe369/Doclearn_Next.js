@@ -3,6 +3,8 @@ import styles from './Header.module.css';
 import { MdOutlineFeed } from "react-icons/md"
 import { RiArticleLine } from "react-icons/ri"
 import { HiOutlineNewspaper } from "react-icons/hi2"
+import { Newspaper, MessageSquare, FileText, BookOpen } from "lucide-react"
+
 import { GoBook } from "react-icons/go";
 
 export default function Navigation() {
@@ -15,10 +17,10 @@ export default function Navigation() {
           style={{borderColor:'#5388d8'}}
         />
         <div className={styles.iconsContainer}>
-          <MdOutlineFeed className={styles.icon} />
-          <RiArticleLine className={styles.icon} />
-          <HiOutlineNewspaper className={styles.icon} />
-          {/* <GoBook className={styles.icon}/> */}
+          <Newspaper className={styles.icon} />
+          <MessageSquare className={styles.icon} />
+          <FileText className={styles.icon} />
+          {/* <BookOpen className={styles.icon}/> */}
         </div>
       </div>
     );
