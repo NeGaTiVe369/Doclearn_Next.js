@@ -4,6 +4,7 @@ import { Geist, Geist_Mono, Montserrat} from "next/font/google";
 import "./globals.css";
 import BootstrapClient from '@/components/BootstrapClient';
 import HeaderLogin from '@/components/Header/HeaderLogin';
+import Footer from '@/components/Footer/Footer';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
       >
         <HeaderLogin />
         {children}
+        <Footer />
         <BootstrapClient />
       </body>
     </html>
