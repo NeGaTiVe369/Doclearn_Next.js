@@ -26,6 +26,13 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "DocLearn",
   description: "Doclearn - Здоровье в знаниях!",
+  icons: {
+    icon: [
+        {
+            url: "/logoGoogle.png", 
+        },
+    ],
+},
 };
 
 export default function RootLayout({

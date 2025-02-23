@@ -61,6 +61,10 @@
     transform: scale(1.4);
   }
 
+  .iconActive{
+    transform: scale(1.4);
+  }
+
   .button{
     flex: 0 0 auto;
     padding: 8px 24px;
