@@ -1,4 +1,4 @@
-import { CardGrid } from "@/components/Card/CardGrid/CardGrid"
+import { CardGrid } from "@/widgets/CardGrid/ui/CardGrid"
 import styles from "./page.module.css"
 
 export default function Home() {

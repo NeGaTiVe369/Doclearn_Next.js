@@ -5,8 +5,8 @@ import { Button } from "react-bootstrap"
 import styles from "./Header.module.css"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
-import LoginModal from "../Auth/Login/LoginModal"
-import RegistrationModal from "../Auth/Registration/RegistrationModal"
+import LoginModal from "@/features/auth/ui/Login/LoginModal"
+import RegistrationModal from "@/features/auth/ui/Registration/RegistrationModal"
 
 export default function HeaderLogin() {
   const [isLoginVisible, setIsLoginVisible] = useState(false)
@@ -37,9 +37,7 @@ export default function HeaderLogin() {
       <div className={styles.headerContent}>
         <Logo />
         <Navigation />
-        <Button className={styles.button} onClick={openLoginModal}>
-          Вход
-        </Button>
+        <Button className={styles.button} onClick={openLoginModal}> Вход </Button>
 
         {/* <Button
           variant="primary"

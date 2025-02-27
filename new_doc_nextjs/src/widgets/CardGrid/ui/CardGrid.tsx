@@ -1,5 +1,5 @@
 import { Newspaper, MessageSquare, FileText } from "lucide-react"
-import { Card } from "./../Card"
+import { Card } from "./Card"
 import styles from "./CardGrid.module.css"
 
 const cards = [

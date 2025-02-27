@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { formatDate } from "@/utils/date"
-import type { NewsItem } from "@/types/news"
+import { formatDate } from "@/shared/lib/date"
+import type { NewsItem } from "@/entities/news/model/types"
 import styles from "./NewsCard.module.css"
 
 interface NewsCardProps {

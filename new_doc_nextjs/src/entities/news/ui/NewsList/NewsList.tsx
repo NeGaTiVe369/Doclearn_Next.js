@@ -1,5 +1,5 @@
 import Image from "next/image"
-import type { NewsItem } from "@/types/news"
+import type { NewsItem } from "@/entities/news/model/types"
 import styles from "./NewsList.module.css"
 
 interface NewsList {

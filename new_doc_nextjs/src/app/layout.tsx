@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat} from "next/font/google";
 import "./globals.css";
-import BootstrapClient from '@/components/BootstrapClient';
-import HeaderLogin from '@/components/Header/HeaderLogin';
-import Footer from '@/components/Footer/Footer';
+import BootstrapClient from '@/app/providers/BootstrapClient';
+import HeaderLogin from '@/widgets/header/ui/HeaderLogin';
+import Footer from '@/widgets/footer/Footer';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -19,7 +19,7 @@ import Footer from '@/components/Footer/Footer';
 const montserrat = Montserrat({
     
   variable: '--font-montserrat',
-  weight: ['300','400', '600', '700'],
+  weight: ['300', '400', '600', '700'],
   subsets: ['latin'],
 })
 

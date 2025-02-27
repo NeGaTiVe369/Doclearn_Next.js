@@ -1,7 +1,7 @@
 import type React from "react"
 import { Form } from "react-bootstrap"
 import { Controller, type Control, type FieldError } from "react-hook-form"
-import styles from "@/components/Auth/styles/AuthForm.module.css"
+import styles from "../styles/AuthForm.module.css"
 
 interface FormInputProps {
   name: string

@@ -1,6 +1,6 @@
-import { NewsCard } from "@/components/News/NewsCard/NewsCard"
-import { NewsList } from "@/components/News/NewsList/NewsList"
-import type { NewsItem } from "@/types/news"
+import { NewsCard } from "@/entities/news/ui/NewsCard/NewsCard"
+import { NewsList } from "@/entities/news/ui/NewsList/NewsList"
+import type { NewsItem } from "@/entities/news/model/types"
 import styles from "./NewsBlock.module.css"
 
 interface NewsBlockProps {

@@ -1,4 +1,4 @@
-import type { NewsItem } from "@/types/news"
+import type { NewsItem } from "@/entities/news/model/types"
 
 export const featuredNews: NewsItem[] = [
   {

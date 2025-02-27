@@ -14,8 +14,7 @@ const Footer = () => {
           <a href="https://t.me/doclearnRU" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
             <FaTelegram size={28} />
           </a>
-          <a
-            href="mailto:contact@doclearn.ru" target="_blank" rel="noopener noreferrer" aria-label="Mail">
+          <a href="mailto:contact@doclearn.ru" target="_blank" rel="noopener noreferrer" aria-label="Mail">
             <ImMail size={28} />
           </a>
         </div>
