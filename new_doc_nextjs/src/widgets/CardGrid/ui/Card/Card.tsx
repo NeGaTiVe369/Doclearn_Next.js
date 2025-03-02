@@ -1,16 +1,8 @@
-import type { LucideIcon } from "lucide-react"
 import styles from "./Card.module.css"
 import Link from "next/link"
+import type { CardData } from "../../model/types"
 
-
-interface CardProps {
-  icon: LucideIcon
-  title: string
-  description: string
-  href: string
-}
-
-export function Card({ icon: Icon, title, description, href }: CardProps) {
+export function Card({ icon: Icon, title, description, href }: CardData) {
   return (
     <Link href={href} className={styles.card}>
       <div className={styles.iconWrapper}>
