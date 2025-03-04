@@ -2,13 +2,14 @@
 
 import { useState } from "react"
 import { Button } from "react-bootstrap"
+import Image from "next/image"
 import styles from "./Header.module.css"
 import Logo from "./Logo"
 import Navigation from "./Navigation"
 import LoginModal from "@/features/auth/ui/Login/LoginModal"
 import RegistrationModal from "@/features/auth/ui/Registration/RegistrationModal"
 
-export default function HeaderLogin() {
+export default function Header() {
   const [isLoginVisible, setIsLoginVisible] = useState(false)
   const [isRegisterVisible, setIsRegisterVisible] = useState(false)
 
@@ -32,12 +33,17 @@ export default function HeaderLogin() {
     closeModals()
   }
 
+
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
         <Logo />
         <Navigation />
-        <Button className={styles.button} onClick={openLoginModal}> Вход </Button>
+          <Button className={styles.button} onClick={openLoginModal}>
+            Вход
+          </Button>
+
+        {/* <Button className={styles.button} onClick={openLoginModal}> Вход </Button> */}
 
         {/* <Button
           variant="primary"
