@@ -9,7 +9,8 @@ interface LoginModalProps {
   show: boolean
   handleClose: () => void
   switchToRegister: () => void
-  onSuccess: (token: string) => void
+  onSuccess: (userId: string) => void
+  onForgotPassword?: () => void
 }
 
 const LoginModal: React.FC<LoginModalProps> = ({ show, handleClose, switchToRegister, onSuccess }) => {
@@ -52,4 +53,3 @@ const LoginModal: React.FC<LoginModalProps> = ({ show, handleClose, switchToRegi
 }
 
 export default LoginModal
-

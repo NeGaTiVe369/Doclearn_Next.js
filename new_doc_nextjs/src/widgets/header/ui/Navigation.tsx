@@ -3,22 +3,24 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import styles from './Header.module.css';
-import { MdOutlineFeed } from "react-icons/md"
-import { RiArticleLine } from "react-icons/ri"
-import { HiOutlineNewspaper } from "react-icons/hi2"
+// import { MdOutlineFeed } from "react-icons/md"
+// import { RiArticleLine } from "react-icons/ri"
+// import { HiOutlineNewspaper } from "react-icons/hi2"
 import { Newspaper, MessageSquare, FileText, BookOpen } from "lucide-react"
 
 import { GoBook } from "react-icons/go";
 
-export default function Navigation() {
+export default function Navigation({isAuthenticated = false}) {
   const pathname = usePathname()
+
+  const isAggregatorActive = pathname.startsWith("/Aggregator")
 
     return (
       <div className={styles.search}>
         <input 
           type="text" 
           className="form-control"
-          placeholder="Поиск" 
+          placeholder="Поиск по сайту..." 
           style={{borderColor:'#5388d8'}}
         />
         <div className={styles.iconsContainer}>
@@ -28,12 +30,14 @@ export default function Navigation() {
           <Link href="/Feed">
             <MessageSquare className={`${styles.icon} ${pathname === "/Feed" ? styles.iconActive : ""}`} />
           </Link>
-          <Link href="/Articles">
-            <FileText className={`${styles.icon} ${pathname === "/Articles" ? styles.iconActive : ""}`} />
+          <Link href="/Aggregator">
+            <FileText className={`${styles.icon} ${isAggregatorActive ? styles.iconActive : ""}`} />
           </Link>
-          {/* <Link href="/Learn">
-            <BookOpen className={`${styles.icon} ${pathname === "/Learn" ? styles.active : ""}`} />
-          </Link> */}
+          {isAuthenticated && (
+            <Link href="/Learn">
+              <BookOpen className={`${styles.icon} ${pathname === "/Learn" ? styles.iconActive : ""}`} />
+            </Link>
+          )}
         </div>
       </div>
     );
